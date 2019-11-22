@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Cocktail.destroy_all if Rails.env.development?
+Dose.destroy_all if Rails.env.development?
 Ingredient.destroy_all if Rails.env.development?
 
 require 'open-uri'
