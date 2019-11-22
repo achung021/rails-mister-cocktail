@@ -1,0 +1,15 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% cocktails.each do |cocktail| %>
+      <tr>
+        <td><%= cocktail.name %></td>
+        <td><%= link_to 'See how to make', cocktail_path(cocktail) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
